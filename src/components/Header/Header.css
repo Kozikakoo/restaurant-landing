@@ -1,0 +1,58 @@
+.header {
+    background-image: url("../../assets/header-bg.png");
+    color: white;
+    padding: 0 80px;
+}
+
+.header__nav {
+
+}
+
+.header__nav-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: center;
+}
+
+.header__nav-item {
+    height: 100px;
+    width: 133px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.header__img {
+}
+
+.header__time {
+}
+
+.header__block-links {
+}
+
+.header__links {
+}
+
+.header__link {
+}
+
+.header__block-title {
+}
+
+.header__text {
+}
+
+.header__title {
+}
+
+.header__rectangle {
+}
+
+.header__block-buttons {
+}
