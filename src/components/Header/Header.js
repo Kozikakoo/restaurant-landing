@@ -1,7 +1,7 @@
 import React from "react";
-import {helm} from "../../utils/constants";
+import {helm, facebookLogo, instaLogo, twitterLogo} from "../../utils/constants";
 
-function Header () {
+function Header() {
     return (
         <header className="header">
             <nav className="header__nav">
@@ -17,22 +17,25 @@ function Header () {
                 </ul>
             </nav>
             <img className="header__img" alt="helm" src={helm}/>
-            <p className="header__time">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
-            <div className="header__block-links">
-                <ul className="header__links">
-                    <li className="header__link"></li>
-                    <li className="header__link"></li>
-                    <li className="header__link"></li>
-                </ul>
-            </div>
+
+
             <div className="header__block-title">
+                <p className="header__time">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
                 <p className="header__text">RESTAURANT</p>
                 <h1 className="header__title">hungry people</h1>
                 <div className="header__rectangle"></div>
                 <div className="header__block-buttons">
-                    <button onClick="header__button_yellow">BOOK TABLE</button>
-                    <button onClick="header__button">EXPLORE</button>
+                    <button className="header__button header__button_yellow">BOOK TABLE</button>
+                    <button className="header__button">EXPLORE</button>
                 </div>
+                <ul className="header__links">
+                    <li className="header__link"><a><img className="header__logo" src={facebookLogo}
+                                                         alt="facebook"/></a></li>
+                    <li className="header__link"><a><img className="header__logo" src={twitterLogo} alt="twitter"/></a>
+                    </li>
+                    <li className="header__link"><a><img className="header__logo" src={instaLogo} alt="instagram"/></a>
+                    </li>
+                </ul>
             </div>
         </header>
     )

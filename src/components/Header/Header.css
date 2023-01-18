@@ -2,11 +2,13 @@
     background-image: url("../../assets/header-bg.png");
     color: white;
     padding: 0 80px;
+    height: 800px;
+    position: relative;
 }
 
-.header__nav {
+/*.header__nav {*/
 
-}
+/*}*/
 
 .header__nav-list {
     padding: 0;
@@ -15,9 +17,13 @@
     justify-content: space-evenly;
     list-style-type: none;
     align-items: center;
+    text-align: center;
 }
 
 .header__nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100px;
     width: 133px;
     font-family: 'Open Sans', Arial, sans-serif;
@@ -27,32 +33,120 @@
     line-height: 18px;
 }
 
+.header__nav-item:nth-of-type(4) {
+    margin-right: 220px;
+}
+
 .header__img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    margin: 25px auto 0;
+    left: 0;
+    right: 0;
 }
 
 .header__time {
-}
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    position: absolute;
+    left: -20px;
+    rotate: -90deg;
+    margin: auto;
+    top: 0;
+    bottom: 0;
 
-.header__block-links {
 }
 
 .header__links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
+    right: 0;
 }
 
 .header__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    margin-bottom: 20px;
+
+}
+
+.header__logo {
+    margin-top: 4px;
+}
+
+.header__link:last-of-type {
+    margin-bottom: 0;
 }
 
 .header__block-title {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 225px;
 }
 
 .header__text {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.5em;
 }
 
 .header__title {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 0;
+    text-transform: uppercase;
 }
 
 .header__rectangle {
+    width: 60px;
+    height: 5.11px;
+    background-color: #E8C300;
+    border-radius: 50px;
 }
 
 .header__block-buttons {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 30px;
+
+}
+
+.header__button {
+    background-color: transparent;
+    width: 200px;
+    height: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    border-radius: 5px;
+}
+
+.header__button_yellow {
+    background-color: #E8C300;
+    margin-right: 40px;
 }
