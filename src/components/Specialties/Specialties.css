@@ -1,0 +1,9 @@
+.specialties {
+    background-image: url("../../assets/Specialties.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+    padding: 75px 80px 75px 100px;
+}
+

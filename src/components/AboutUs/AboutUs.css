@@ -1,0 +1,18 @@
+.section {
+    min-height: 475px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.about-us {
+
+    padding: 75px 100px 75px 80px;
+
+
+}
+
+.restaurant-image {
+    transform: scale(1.1);
+}
