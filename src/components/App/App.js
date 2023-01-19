@@ -5,6 +5,7 @@ import AboutUs from "../AboutUs/AboutUs";
 import OurTeam from "../OurTeam/OurTeam";
 import Specialties from "../Specialties/Specialties";
 import Booking from "../Booking/Booking";
+import PrivateEvents from "../PrivateEvents/PrivateEvents";
 
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
         <AboutUs/>
         <OurTeam/>
         <Booking/>
-      <Specialties/>
+        <Specialties/>
+        <PrivateEvents/>
     </div>
   );
 }

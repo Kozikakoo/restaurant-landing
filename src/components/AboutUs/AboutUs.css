@@ -8,11 +8,12 @@
 
 .about-us {
 
-    padding: 75px 100px 75px 80px;
+    padding: 50px 100px 50px 80px;
 
 
 }
 
 .restaurant-image {
-    transform: scale(1.1);
+    /*transform: scale(1.1);*/
+
 }

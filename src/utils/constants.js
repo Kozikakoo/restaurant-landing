@@ -6,7 +6,7 @@ import coals from "../assets/coals.png"
 import chef from "../assets/cook.png"
 import iceCream from "../assets/ice-cream.png"
 import rings from "../assets/rings.png"
-import wedding from "../assets/wedding.png"
+import parties from "../assets/wedding.png"
 import clock from "../assets/clock.png"
 
 export {
@@ -18,6 +18,6 @@ export {
     coals,
     iceCream,
     rings,
-    wedding,
+    parties,
     clock
 };

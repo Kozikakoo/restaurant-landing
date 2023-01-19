@@ -1,0 +1,47 @@
+.private-events {
+    background-image: url("../../assets/Specialties.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+    padding: 50px 80px 50px 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.private-events__container {
+    position: relative;
+}
+
+.private-events__rectangle {
+    position: absolute;
+    background-color: black;
+    width: 80px;
+    height: 475px;
+    top: 50px;
+}
+
+.private-events__rectangle_r {
+    right: 50px;
+}
+
+.private-events__rectangle_l {
+    left: 50px;
+}
+
+.private-events__text {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 12px;
+    text-indent: 20px;
+}
+
+.private-events__text_l {
+    transform: rotate(90deg);
+   }
+
+.private-events__text_r {
+     transform: rotate(-90deg);
+}
