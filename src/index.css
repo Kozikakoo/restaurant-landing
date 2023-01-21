@@ -5,8 +5,10 @@
 
 @import url("./components/AboutUs/AboutUs.css");
 @import url("./components/TextBlock/TextBlock.css");
+@import url("./components/Title/Title.css");
 @import url("./components/OurTeam/OurTeam.css");
 @import url("./components/Specialties/Specialties.css");
 @import url("./components/PrivateEvents/PrivateEvents.css");
+@import url("./components/Booking/Booking.css");
 
 @import url("./components/Footer/Footer.css");

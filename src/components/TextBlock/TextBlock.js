@@ -1,11 +1,11 @@
 import React from "react";
+import Title from "../Title/Title";
 
 function TextBlock({title}) {
     return (
 
         <div className="block-text">
-            <h3 className="block-text__title">{title}</h3>
-            <div className="block-text__rectangle"></div>
+            <Title title={title}/>
             <p className="block-text__paragraph_bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Duis at velit maximus, molestie est a, tempor magna.</p>
             <p className="block-text__paragraph">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere.

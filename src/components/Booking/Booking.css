@@ -1,0 +1,83 @@
+
+.booking {
+    position: relative;
+    padding: 50px 143px 50px 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.booking__form-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking__form {
+    box-sizing: border-box;
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.booking__form-input {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    width: 277px;
+    height: 60px;
+    padding: 10px;
+    background-color: #E5E5E5;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.booking__submit {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+    height: 60px;
+    background-color: #E8C300;
+    border-radius: 5px;
+    border: none;
+}
+
+.restaurant-image {
+}
+
+.booking__working-hours {
+    position: absolute;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 2;
+    text-align: center;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: rgba(51, 51, 51, 0.5);
+}
+
+.booking__working-hours_bold {
+    font-weight: 700;
+}
