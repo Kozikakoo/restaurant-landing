@@ -7,20 +7,22 @@ import Specialties from "../Specialties/Specialties";
 import Booking from "../Booking/Booking";
 import PrivateEvents from "../PrivateEvents/PrivateEvents";
 import Footer from "../Footer/Footer";
+import Menu from "../Menu/Menu";
 
 
 function App() {
-  return (
-    <div className="App">
-      <Header/>
-        <AboutUs/>
-        <OurTeam/>
-        <Booking/>
-        <Specialties/>
-        <PrivateEvents/>
-      <Footer/>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Header/>
+            <AboutUs/>
+            <OurTeam/>
+            <Booking/>
+            <Specialties/>
+            <Menu/>
+            <PrivateEvents/>
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;

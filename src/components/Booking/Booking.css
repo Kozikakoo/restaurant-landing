@@ -13,6 +13,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-right: 30px;
 }
 
 .booking__form {
@@ -53,9 +54,6 @@
     background-color: #E8C300;
     border-radius: 5px;
     border: none;
-}
-
-.restaurant-image {
 }
 
 .booking__working-hours {
