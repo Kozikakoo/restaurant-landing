@@ -10,5 +10,8 @@
 @import url("./components/Specialties/Specialties.css");
 @import url("./components/PrivateEvents/PrivateEvents.css");
 @import url("./components/Booking/Booking.css");
+@import url("./components/Menu/Menu.css");
+@import url("./components/MenuItem/MenuItem.css");
+
 
 @import url("./components/Footer/Footer.css");
