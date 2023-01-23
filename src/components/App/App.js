@@ -8,6 +8,7 @@ import Booking from "../Booking/Booking";
 import PrivateEvents from "../PrivateEvents/PrivateEvents";
 import Footer from "../Footer/Footer";
 import Menu from "../Menu/Menu";
+import Contact from "../Contact/Contact";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Specialties/>
             <Menu/>
             <PrivateEvents/>
+            <Contact/>
             <Footer/>
         </div>
     );
