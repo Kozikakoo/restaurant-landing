@@ -3,9 +3,9 @@ import Title from "../Title/Title";
 import {useForm} from "../../hooks/useForm";
 
 function Contact() {
-    const name = useForm("", {isEmpty: true, minLength: 3})
-    const email = useForm("", {isEmpty: true, minLength: 3})
-    const phone = useForm("")
+    const name = useForm("", {isEmpty: true, minLength: 3, maxLength: 30})
+    const email = useForm("", {isEmpty: true, minLength: 3, emailError: true})
+    const phone = useForm("", {isEmpty: true, minLength: 3, phoneError: true})
     const text = useForm("", {isEmpty: true, minLength: 5})
 
 
@@ -16,11 +16,13 @@ function Contact() {
                 molestie est a, tempor
                 magna.</p>
             <form className="contact__form">
-
+                {((name.isDirty&&name.isEmpty)||name.maxLengthError||name.minLengthError) && <div>{name.errorMessages}</div>}
                 <input className="contact__form-input" value={name.value} onChange={e => name.onChange(e)} onBlur={e => name.onBlur(e)} type="text" name="name" placeholder="Name" required/>
+                {((email.isDirty&&email.isEmpty)||email.phoneError) && <div>{email.errorMessages}</div>}
                 <input className="contact__form-input" value={email.value} onChange={e => email.onChange(e)} onBlur={e => email.onBlur(e)} type="email" name="email" placeholder="Email"/>
-                {(phone.isDirty&&phone.isErrorName) && <div>{phone.errorMessageName}</div>}
+                {((phone.isDirty&&phone.isEmpty)||phone.phoneError) && <div>{phone.errorMessages}</div>}
                 <input className="contact__form-input" value={phone.value} onChange={e => phone.onChange(e)} onBlur={e => phone.onBlur(e)} type="tel" name="phone" placeholder="Phone"/>
+                {((text.isDirty&&text.isEmpty)||text.minLengthError) && <div>{text.errorMessages}</div>}
                 <textarea className="contact__form-textarea" value={text.value} onChange={e => text.onChange(e)} onBlur={e => text.onBlur(e)} name="text" placeholder="Message"/>
                 <button className="contact__submit">SEND MESSAGE</button>
             </form>
