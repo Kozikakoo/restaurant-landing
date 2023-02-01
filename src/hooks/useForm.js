@@ -6,9 +6,11 @@ export const useValidation = (value, validations) => {
     const [maxLengthError, setMaxLengthError] = useState(false);
     const [emailError, setEmailError] = useState(false);
     const [phoneError, setPhoneError] = useState(false);
+    const [numberError, setNumberError] = useState(false);
     const [errorMessages, setErrorMessages] = useState("");
     const regexEmail = /^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i;
     const regexPhone = /^([0|\+[0-9]{1,5})?([7-9][0-9]{9})$/;
+    const regexNumbers = /^\d+$/;
 
     useEffect(() => {
         for (const validation in validations) {
@@ -24,7 +26,7 @@ export const useValidation = (value, validations) => {
                 case "minLength":
                     if ((value.length < validations[validation])&&value!=="") {
                         setMinLengthError(true)
-                        setErrorMessages("Input should contain more 3 characters")
+                        setErrorMessages(`Input should contain more ${validations[validation]} characters`)
                     }
                     else setMinLengthError(false)
                     break;
@@ -32,13 +34,13 @@ export const useValidation = (value, validations) => {
                 case "maxLength":
                     if (value.length > validations[validation]) {
                         setMaxLengthError(true)
-                        setErrorMessages("Input should contain less 30 characters")
+                        setErrorMessages(`Input should contain less ${validations[validation]} characters`)
                     }
                     else setMaxLengthError(false)
                     break;
 
                 case "emailError":
-                    if (!regexEmail.test(value)) {
+                    if (!regexEmail.test(value)&&value!=="") {
                         setEmailError(true)
                         setErrorMessages("Invalid input")
                     }
@@ -52,6 +54,13 @@ export const useValidation = (value, validations) => {
                     }
                     else setPhoneError(false)
                     break;
+                case "numberError":
+                    if (!regexNumbers.test(value)&&value!=="") {
+                        setNumberError(true)
+                        setErrorMessages("Invalid input")
+                    }
+                    else setNumberError(false)
+                    break;
             }}
     }, [value])
 
@@ -61,7 +70,8 @@ export const useValidation = (value, validations) => {
         maxLengthError,
         emailError,
         phoneError,
-        errorMessages
+        errorMessages,
+        numberError
     }
 }
 

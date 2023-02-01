@@ -1,8 +1,16 @@
 import React from "react";
 import {clock} from "../../utils/constants";
 import Title from "../Title/Title";
+import {useForm} from "../../hooks/useForm";
 
 function Booking() {
+    const name = useForm("", {isEmpty: true, minLength: 3, maxLength: 30})
+    const email = useForm("", {isEmpty: true, minLength: 3, emailError: true})
+    const phone = useForm("", {isEmpty: true, phoneError: true})
+    const people = useForm("", {isEmpty: true, minLength: 3, numberError: true})
+    const date = useForm("", {isEmpty: true})
+    const time = useForm("", {isEmpty: true})
+
     return (
         <section className="booking">
 
