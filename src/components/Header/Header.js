@@ -18,15 +18,14 @@ function Header() {
             </nav>
             <img className="header__img" alt="helm" src={helm}/>
 
-
             <div className="header__block-title">
                 <p className="header__time">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
                 <p className="header__text">RESTAURANT</p>
                 <h1 className="header__title">hungry people</h1>
                 <div className="header__rectangle"></div>
                 <div className="header__block-buttons">
-                    <button className="header__button header__button_yellow">BOOK TABLE</button>
-                    <button className="header__button">EXPLORE</button>
+                    <a className="header__button header__button_yellow" href="#booking">BOOK TABLE</a>
+                    <a className="header__button">EXPLORE</a>
                 </div>
                 <ul className="header__links">
                     <li className="header__link"><a><img className="header__logo" src={facebookLogo}
