@@ -6,14 +6,14 @@ function Header() {
         <header className="header">
             <nav className="header__nav">
                 <ul className="header__nav-list">
-                    <li className="header__nav-item">HOME</li>
-                    <li className="header__nav-item">ABOUT</li>
-                    <li className="header__nav-item">TEAM</li>
-                    <li className="header__nav-item">BOOKING</li>
-                    <li className="header__nav-item">MENU</li>
-                    <li className="header__nav-item">GALERIE</li>
-                    <li className="header__nav-item">EVENTS</li>
-                    <li className="header__nav-item">CONTACT</li>
+                    <li className="header__nav-item"><a href="#top">HOME</a></li>
+                    <li className="header__nav-item"><a href="#about-us">ABOUT</a></li>
+                    <li className="header__nav-item"><a href="#our-team">TEAM</a></li>
+                    <li className="header__nav-item"><a href="#booking">BOOKING</a></li>
+                    <li className="header__nav-item"><a href="#menu">MENU</a></li>
+                    <li className="header__nav-item"><a href="#">GALERIE</a></li>
+                    <li className="header__nav-item"><a href="#private-events">EVENTS</a></li>
+                    <li className="header__nav-item"><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
             <img className="header__img" alt="helm" src={helm}/>

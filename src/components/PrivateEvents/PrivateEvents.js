@@ -3,7 +3,7 @@ import {rings, parties} from "../../utils/constants"
 
 function PrivateEvents() {
     return (
-        <section className="private-events">
+        <section id="private-events">
             <h2 className="section__title">PRIVATE EVENTS</h2>
             <div className="private-events__container">
                 <img className="restaurant-image" src={rings} alt="rings"/>

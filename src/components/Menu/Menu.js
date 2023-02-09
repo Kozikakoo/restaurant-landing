@@ -4,7 +4,7 @@ import MenuItem from "../MenuItem/MenuItem";
 
 function Menu() {
     return (
-        <section className="menu">
+        <section id="menu">
             <Title title="DELICIOUS MENU"/>
             <p className="menu__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus,
                 molestie est a, tempor

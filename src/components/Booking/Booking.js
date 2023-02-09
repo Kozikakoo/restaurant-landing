@@ -12,7 +12,7 @@ function Booking() {
     const time = useForm("", {isEmpty: true});
 
     return (
-        <section className="booking">
+        <section id="booking">
 
             <div className="booking__form-block">
                 <Title title={"BOOK A TABLE"}/>

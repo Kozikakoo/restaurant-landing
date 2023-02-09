@@ -21,7 +21,7 @@ function Contact() {
     // }
     //
     return (
-        <section className="contact">
+        <section id="contact">
             <Title title="CONTACT"/>
             <p className="menu__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus,
                 molestie est a, tempor
