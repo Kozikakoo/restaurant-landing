@@ -7,28 +7,19 @@ function Contact() {
     const email = useForm("", {isEmpty: true, minLength: 3, emailError: true})
     const phone = useForm("", {isEmpty: true, minLength: 3, phoneError: true})
     const text = useForm("", {isEmpty: true, minLength: 5})
-    const [isBorderRed, setBorderRed] = useState(false)
-    const nameError = (name.isDirty && name.isEmpty) || name.maxLengthError || name.minLengthError
-    const emailError = (email.isDirty && email.isEmpty) || email.emailError
-    const phoneError = (phone.isDirty && phone.isEmpty) || phone.phoneError
-    const textError = (text.isDirty && text.isEmpty) || text.minLengthError
+    // const [isBorderRed, setBorderRed] = useState(false)
 
-    // const handleBorderInput = (inputName) => {
-    //     isBorderRed ? setBorderRed(false) : setBorderRed(true)
-    //     return inputName
-    // }classList.add("contact__form-input_border")
-
-    const changeBorderInput = (inputName) => {
-        document.getElementById(`contact-${inputName}`).style.border = "1px red solid"
-        return true
-    }
-
-    // useEffect((inputName) => {
-    //     if (isBorderRed) document.getElementById(`contact-${handleBorderInput(inputName)}`).classList.add("contact__form-input_border")
-    //     else document.getElementById(`contact-${handleBorderInput(inputName)}`).classList.remove("contact__form-input_border")
-    // }, [isBorderRed])
+    // const changeBorderInputRed = (inputName) => {
+    //     if (isBorderRed) {
+    //         document.getElementById(`contact-${inputName}`).style.border = "none"
+    //         setBorderRed(false)
+    //     } else {
+    //         document.getElementById(`contact-${inputName}`).style.border = "1px red solid"
+    //         setBorderRed(true)
+    //     }
     //
-
+    // }
+    //
     return (
         <section className="contact">
             <Title title="CONTACT"/>
@@ -37,29 +28,32 @@ function Contact() {
                 magna.</p>
             <form className="contact__form">
                 <div
-                    className="contact__form-container">{nameError && changeBorderInput("name") &&
-                    <div className="input__error">{name.errorMessages}</div>}
+                    className="input-container">{((name.isDirty && name.isEmpty) || name.maxLengthError || name.minLengthError) &&
+                    <div className="error-text">{name.errorMessages}</div>}
                     <input className="contact__form-input" id="contact-name" value={name.value}
-                           onChange={e => name.onChange(e)} onBlur={e => name.onBlur(e)} type="text" name="name"
+                           onChange={e => name.onChange(e)} onBlur={e => name.onBlur(e)} type="text"
+                           name="name"
                            placeholder="Name" required/>
                 </div>
-                <div className="contact__form-container">
-                    {emailError && changeBorderInput("email") &&
-                        <div className="input__error">{email.errorMessages}</div>}
+                <div className="input-container">
+                    {((email.isDirty && email.isEmpty) || email.emailError) &&
+                        <div className="error-text">{email.errorMessages}</div>}
                     <input className="contact__form-input" id="contact-email" value={email.value}
-                           onChange={e => email.onChange(e)} onBlur={e => email.onBlur(e)} type="email" name="email"
+                           onChange={e => email.onChange(e)} onBlur={e => email.onBlur(e)} type="email"
+                           name="email"
                            placeholder="Email"/>
                 </div>
-                <div className="contact__form-container">
-                    {phoneError && changeBorderInput("phone") &&
-                        <div className="input__error">{phone.errorMessages}</div>}
+                <div className="input-container">
+                    {((phone.isDirty && phone.isEmpty) || phone.phoneError) &&
+                        <div className="error-text">{phone.errorMessages}</div>}
                     <input className="contact__form-input" id="contact-phone" value={phone.value}
-                           onChange={e => phone.onChange(e)} onBlur={e => phone.onBlur(e)} type="tel" name="phone"
+                           onChange={e => phone.onChange(e)} onBlur={e => phone.onBlur(e)} type="tel"
+                           name="phone"
                            placeholder="Phone"/>
                 </div>
-                <div className="contact__form-container-text">
-                    {textError && changeBorderInput("textarea") &&
-                        <div className="input__error">{text.errorMessages}</div>}
+                <div className="input-container-text">
+                    {((text.isDirty && text.isEmpty) || text.minLengthError) &&
+                        <div className="error-text">{text.errorMessages}</div>}
                     <textarea className="contact__form-textarea" id="contact-textarea" value={text.value}
                               onChange={e => text.onChange(e)} onBlur={e => text.onBlur(e)} name="text"
                               placeholder="Message"/>
