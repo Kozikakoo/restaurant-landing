@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import Title from "../Title/Title";
 import {useForm} from "../../hooks/useForm";
 
-function Contact() {
+function Contact({submitContact}) {
     const name = useForm("", {isEmpty: true, minLength: 3, maxLength: 30})
     const email = useForm("", {isEmpty: true, minLength: 3, emailError: true})
     const phone = useForm("", {isEmpty: true, minLength: 3, phoneError: true})
@@ -58,7 +58,7 @@ function Contact() {
                               onChange={e => text.onChange(e)} onBlur={e => text.onBlur(e)} name="text"
                               placeholder="Message"/>
                 </div>
-                <button className="contact__submit">SEND MESSAGE</button>
+                <button className="contact__submit" onSubmit={submitContact}>SEND MESSAGE</button>
             </form>
             <ul className="contact__list">
                 <li className="contact__info"><i className="fa-solid fa-location-dot contact__color"></i>&nbsp;5th

@@ -12,16 +12,21 @@ import Contact from "../Contact/Contact";
 
 
 function App() {
+
+    const clickOnSubmit = (e) => {
+        e.preventDefault()
+    }
+
     return (
         <div className="App">
             <Header/>
             <AboutUs/>
             <OurTeam/>
-            <Booking/>
+            <Booking submitBooking={clickOnSubmit}/>
             <Specialties/>
             <Menu/>
             <PrivateEvents/>
-            <Contact/>
+            <Contact submitContact={clickOnSubmit}/>
             <Footer/>
         </div>
     );

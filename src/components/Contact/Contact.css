@@ -40,7 +40,7 @@
 }
 
 .input-container {
-   position: relative;
+    position: relative;
     min-height: 79px;
     display: flex;
     flex-direction: column;
@@ -83,6 +83,13 @@
     font-size: 12px;
     line-height: 20px;
     color: white;
+    z-index: 9999;
+    transition: background-color 0.2s linear;
+}
+
+.contact__submit:hover {
+    cursor: pointer;
+    background-color: goldenrod;
 }
 
 .contact__list {
