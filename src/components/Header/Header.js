@@ -28,11 +28,11 @@ function Header() {
                     <a className="header__button">EXPLORE</a>
                 </div>
                 <ul className="header__links">
-                    <li className="header__link"><a><img className="header__logo" src={facebookLogo}
+                    <li className="header__link"><a href="#"><img className="header__logo" src={facebookLogo}
                                                          alt="facebook"/></a></li>
-                    <li className="header__link"><a><img className="header__logo" src={twitterLogo} alt="twitter"/></a>
+                    <li className="header__link"><a href="#"><img className="header__logo" src={twitterLogo} alt="twitter"/></a>
                     </li>
-                    <li className="header__link"><a><img className="header__logo" src={instaLogo} alt="instagram"/></a>
+                    <li className="header__link"><a href="#"><img className="header__logo" src={instaLogo} alt="instagram"/></a>
                     </li>
                 </ul>
             </div>

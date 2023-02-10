@@ -1,7 +1,15 @@
+/*.section {*/
+/*    display: ;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*}*/
+
 .section {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    justify-items: center;
+    column-gap: 10px;
 }
 
 #about-us {
