@@ -1,5 +1,6 @@
-import React from "react";
-import {rings, parties} from "../../utils/constants"
+import React from 'react';
+
+import {rings, parties} from '../../utils/constants';
 
 function PrivateEvents() {
     return (
@@ -7,14 +8,18 @@ function PrivateEvents() {
             <h2 className="section__title">PRIVATE EVENTS</h2>
             <div className="private-events__container">
                 <img className="private-events__img" src={rings} alt="rings"/>
-                <div className="private-events__rectangle private-events__rectangle_r"><p className="private-events__text private-events__text_l">WEDDINGS</p></div>
+                <div className="private-events__rectangle private-events__rectangle_r">
+                    <p className="private-events__text private-events__text_l">WEDDINGS</p>
+                </div>
             </div>
             <div className="private-events__container">
                 <img className="private-events__img" src={parties} alt="wedding"/>
-                <div className="private-events__rectangle private-events__rectangle_l"><p className="private-events__text private-events__text_l">CORPORATE&nbsp;PARTIES</p></div>
+                <div className="private-events__rectangle private-events__rectangle_l">
+                    <p className="private-events__text private-events__text_l">CORPORATE&nbsp;PARTIES</p>
+                </div>
             </div>
         </section>
-    )
+    );
 }
 
 export default PrivateEvents;

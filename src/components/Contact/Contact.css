@@ -127,7 +127,7 @@
     }
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1300px) {
     .contact__list {
         margin: 15px;
         justify-content: center;
