@@ -83,7 +83,7 @@ function Booking({submitBooking}) {
                 </form>
             </div>
 
-            <img className="restaurant-image" src={clock} alt="cook"/>
+            <img className="booking__img" src={clock} alt="cook"/>
             <p className="booking__working-hours">&nbsp;Mon - Fri: <span
                 className="booking__working-hours_bold">&nbsp;8PM - 10PM</span>, Sat - Sun:
                 <span className="booking__working-hours_bold">&nbsp;8PM - 3AM</span>, Phone: <span

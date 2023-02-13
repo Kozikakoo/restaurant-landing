@@ -6,11 +6,11 @@ function PrivateEvents() {
         <section id="private-events">
             <h2 className="section__title">PRIVATE EVENTS</h2>
             <div className="private-events__container">
-                <img className="restaurant-image" src={rings} alt="rings"/>
+                <img className="private-events__img" src={rings} alt="rings"/>
                 <div className="private-events__rectangle private-events__rectangle_r"><p className="private-events__text private-events__text_l">WEDDINGS</p></div>
             </div>
             <div className="private-events__container">
-                <img className="restaurant-image" src={parties} alt="wedding"/>
+                <img className="private-events__img" src={parties} alt="wedding"/>
                 <div className="private-events__rectangle private-events__rectangle_l"><p className="private-events__text private-events__text_l">CORPORATE&nbsp;PARTIES</p></div>
             </div>
         </section>

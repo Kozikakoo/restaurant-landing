@@ -7,11 +7,21 @@
     padding: 50px 80px 50px 100px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .private-events__container {
     position: relative;
+
 }
+
+/*.private-events__img {*/
+/*    position: relative;*/
+/*    z-index: 1;*/
+/*    width: 100%;*/
+/*}*/
+
+
 
 .private-events__rectangle {
     position: absolute;

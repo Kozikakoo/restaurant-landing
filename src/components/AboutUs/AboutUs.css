@@ -15,3 +15,7 @@
 #about-us {
     padding: 50px 100px 50px 80px;
 }
+
+.restaurant-image {
+    max-width: 90%;
+}
