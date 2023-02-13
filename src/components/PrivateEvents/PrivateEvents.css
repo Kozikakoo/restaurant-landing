@@ -4,7 +4,7 @@
     background-position: center;
     color: white;
     position: relative;
-    padding: 50px 80px 50px 100px;
+    padding: 50px 80px 50px 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,14 +14,6 @@
     position: relative;
 
 }
-
-/*.private-events__img {*/
-/*    position: relative;*/
-/*    z-index: 1;*/
-/*    width: 100%;*/
-/*}*/
-
-
 
 .private-events__rectangle {
     position: absolute;
@@ -54,4 +46,24 @@
 
 .private-events__text_r {
      transform: rotate(-90deg);
+}
+
+@media screen and (max-width: 1180px) {
+    .private-events__img {
+        width: 475px;
+    }
+
+    .private-events__rectangle {
+        width: 70px;
+        height: 395px;
+        top: 40px;
+    }
+
+    .private-events__rectangle_r {
+        right: 40px;
+    }
+
+    .private-events__rectangle_l {
+        left: 40px;
+    }
 }

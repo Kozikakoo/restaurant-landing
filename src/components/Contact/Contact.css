@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .contact__form {
@@ -103,16 +104,10 @@
     align-items: start;
     color: rgba(51, 51, 51, 0.5);
     padding: 0;
-    justify-self: start;
     width: 100%;
     margin-top: -45px;
 }
 
-@media screen and (max-width: 1400px) {
-    .contact__list {
-        font-size: 9px;
-    }
-}
 
 .contact__info {
     margin: 10px;
@@ -126,3 +121,17 @@
     color: #E8C300;
 }
 
+@media screen and (max-width: 1400px) {
+    .contact__list {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .contact__list {
+        margin: 15px;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+    }
+}

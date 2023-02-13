@@ -184,3 +184,9 @@
     background-color: #E8C300;
     margin-right: 40px;
 }
+
+@media screen and (max-width: 1180px) {
+    .header__title {
+        font-size: 70px;
+    }
+}
