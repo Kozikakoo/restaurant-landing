@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/restaurant-landing/static/css/main.01762c0d.css",
+    "main.js": "/restaurant-landing/static/js/main.fefe9376.js",
+    "static/js/787.172e467f.chunk.js": "/restaurant-landing/static/js/787.172e467f.chunk.js",
+    "static/media/header-bg.png": "/restaurant-landing/static/media/header-bg.939da2ca8f05894817b2.png",
+    "static/media/Specialties.png": "/restaurant-landing/static/media/Specialties.2c2c0de4cb3ee207eeb5.png",
+    "static/media/ourteam.png": "/restaurant-landing/static/media/ourteam.9ce5356633d348e83af6.png",
+    "static/media/wedding.png": "/restaurant-landing/static/media/wedding.2e9a6a06900e0d0505aa.png",
+    "static/media/coals.png": "/restaurant-landing/static/media/coals.4d9fe79dd61ff34de30a.png",
+    "static/media/ice-cream.png": "/restaurant-landing/static/media/ice-cream.e65a162bc23030376664.png",
+    "static/media/clock.png": "/restaurant-landing/static/media/clock.212ef1106e560397c525.png",
+    "static/media/cook.png": "/restaurant-landing/static/media/cook.ca0c1426bd77a91ba4f8.png",
+    "static/media/rings.png": "/restaurant-landing/static/media/rings.5809bb766b30b58dc696.png",
+    "static/media/OpenSans-Bold.ttf": "/restaurant-landing/static/media/OpenSans-Bold.73945936653e6516f966.ttf",
+    "static/media/OpenSans-Regular.eot": "/restaurant-landing/static/media/OpenSans-Regular.549c7c27e141332b2241.eot",
+    "static/media/OpenSans-Regular.ttf": "/restaurant-landing/static/media/OpenSans-Regular.56f1eef4f0e56644f3cc.ttf",
+    "static/media/OpenSans-Bold.woff": "/restaurant-landing/static/media/OpenSans-Bold.030f6a69f8156aef8382.woff",
+    "static/media/OpenSans-Regular.woff": "/restaurant-landing/static/media/OpenSans-Regular.74fbb1368a3029d9e39a.woff",
+    "static/media/OpenSans-Bold.woff2": "/restaurant-landing/static/media/OpenSans-Bold.bddf0720f99a7ee7f84e.woff2",
+    "static/media/OpenSans-Regular.woff2": "/restaurant-landing/static/media/OpenSans-Regular.9ffed65db527232e9a9d.woff2",
+    "static/media/HelveticaNeueCyr-Roman.eot": "/restaurant-landing/static/media/HelveticaNeueCyr-Roman.9d7c3316bda88462d707.eot",
+    "static/media/HelveticaNeueCyr-Roman.ttf": "/restaurant-landing/static/media/HelveticaNeueCyr-Roman.0ca719c710b1fbd7e02f.ttf",
+    "static/media/HelveticaNeueCyr-Roman.woff": "/restaurant-landing/static/media/HelveticaNeueCyr-Roman.0247694e510ebe67cce1.woff",
+    "static/media/HelveticaNeueCyr-Roman.woff2": "/restaurant-landing/static/media/HelveticaNeueCyr-Roman.d59df5a538d671a54c79.woff2",
+    "static/media/helm.svg": "/restaurant-landing/static/media/helm.d53be03e6b67eb728517fc93ea796bb1.svg",
+    "static/media/insta.svg": "/restaurant-landing/static/media/insta.7f9ffb45b3fa4d1414295551b0c0786e.svg",
+    "static/media/twitter.svg": "/restaurant-landing/static/media/twitter.0f0c46124585415bc807ac8751aec2e0.svg",
+    "index.html": "/restaurant-landing/index.html",
+    "static/media/facebook.svg": "/restaurant-landing/static/media/facebook.1e0b898478ea4bc5d849e2f8509bdf21.svg",
+    "main.01762c0d.css.map": "/restaurant-landing/static/css/main.01762c0d.css.map",
+    "main.fefe9376.js.map": "/restaurant-landing/static/js/main.fefe9376.js.map",
+    "787.172e467f.chunk.js.map": "/restaurant-landing/static/js/787.172e467f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01762c0d.css",
+    "static/js/main.fefe9376.js"
+  ]
+}
